@@ -2,103 +2,144 @@
 
 ## Introducción
 
-Las siguientes historias de usuario describen las funcionalidades que deberá ofrecer el Producto Mínimo Viable (MVP). Todas las historias están orientadas a permitir que el estudiante gestione su trayectoria académica de forma simple, organizada y sin depender de una conexión a Internet.
+Las siguientes historias de usuario describen las funcionalidades principales del Producto Mínimo Viable (MVP).
+
+Todas las historias están orientadas a que el estudiante pueda gestionar su trayectoria académica de forma simple, organizada y desde una única aplicación.
+
+La aplicación permitirá que un estudiante gestione una o más carreras, manteniendo cada trayectoria académica organizada de forma independiente.
 
 ---
 
-# Módulo: Perfil
+# Módulo: Perfil del estudiante
 
-### US-001
+## US-001 — Crear perfil
 
-**Como estudiante**, quiero crear mi perfil para comenzar a utilizar la aplicación.
-
-### US-002
-
-**Como estudiante**, quiero editar mi perfil para mantener mi información actualizada.
+**Como estudiante, quiero crear mi perfil para comenzar a utilizar la aplicación.**
 
 ---
 
-# Módulo: Institución y carrera
+## US-002 — Editar perfil
 
-### US-003
+**Como estudiante, quiero editar mi perfil para mantener mi información actualizada.**
 
-**Como estudiante**, quiero registrar el nombre de mi institución para identificar dónde estudio.
+---
 
-### US-004
+# Módulo: Gestión de carreras
 
-**Como estudiante**, quiero registrar el nombre de mi carrera para organizar mi trayectoria académica.
+## US-003 — Registrar una carrera
 
-### US-005
+**Como estudiante, quiero registrar una carrera para organizar su trayectoria académica dentro de la aplicación.**
 
-**Como estudiante**, quiero modificar los datos de mi institución y de mi carrera para mantener mi perfil actualizado.
+---
+
+## US-004 — Añadir otra carrera
+
+**Como estudiante, quiero poder añadir otra carrera para gestionar su plan de estudios y seguimiento desde la misma aplicación.**
+
+---
+
+## US-005 — Editar una carrera
+
+**Como estudiante, quiero editar la información de una carrera para mantener sus datos actualizados.**
+
+---
+
+## US-006 — Eliminar una carrera
+
+**Como estudiante, quiero eliminar una carrera que ya no gestiono para mantener organizada mi información académica.**
+
+---
+
+## US-007 — Cambiar entre carreras
+
+**Como estudiante, quiero cambiar entre mis carreras para consultar el plan de estudios y progreso de cada una de forma independiente.**
 
 ---
 
 # Módulo: Plan de estudios
 
-### US-006
+## US-008 — Crear plan de estudios
 
-**Como estudiante**, quiero crear manualmente mi plan de estudios para organizar las materias de mi carrera.
-
-### US-007
-
-**Como estudiante**, quiero agregar materias a mi plan de estudios para representar correctamente mi carrera.
-
-### US-008
-
-**Como estudiante**, quiero editar la información de una materia para mantener mi plan actualizado.
-
-### US-009
-
-**Como estudiante**, quiero eliminar una materia para corregir errores en mi plan de estudios.
-
-### US-010
-
-**Como estudiante**, quiero visualizar mi plan de estudios para comprender la estructura de mi carrera.
-
-### US-011
-
-**Como estudiante**, quiero visualizar las materias organizadas por año y cuatrimestre para encontrarlas fácilmente.
+**Como estudiante, quiero crear manualmente el plan de estudios de una carrera para organizar sus materias.**
 
 ---
 
-# Módulo: Estado académico
+## US-009 — Visualizar plan de estudios
 
-### US-012
-
-**Como estudiante**, quiero marcar una materia como pendiente, cursando, regularizada o aprobada para reflejar mi situación académica.
-
-### US-013
-
-**Como estudiante**, quiero modificar el estado de una materia cuando mi situación académica cambie.
+**Como estudiante, quiero visualizar el plan de estudios de una carrera para comprender su estructura académica.**
 
 ---
 
-# Módulo: Progreso
+## US-010 — Organizar materias
 
-### US-014
-
-**Como estudiante**, quiero visualizar mi progreso en la carrera para conocer cuánto he avanzado.
-
-### US-015
-
-**Como estudiante**, quiero consultar las materias aprobadas, cursando y pendientes para tener una visión completa de mi trayectoria académica.
+**Como estudiante, quiero organizar las materias por año y cuatrimestre para encontrarlas fácilmente.**
 
 ---
 
-# Módulo: Persistencia
+# Módulo: Gestión de materias
 
-### US-016
+## US-011 — Agregar materia
 
-**Como estudiante**, quiero que toda mi información permanezca guardada al cerrar la aplicación para continuar utilizándola sin perder datos.
+**Como estudiante, quiero agregar materias a un plan de estudios para completar la información de mi carrera.**
 
 ---
 
-# Módulo: Funcionamiento
+## US-012 — Editar materia
 
-### US-017
+**Como estudiante, quiero editar la información de una materia para mantener actualizado mi plan de estudios.**
 
-**Como estudiante**, quiero utilizar la aplicación sin conexión a Internet para acceder a mi información en cualquier momento.
+---
+
+## US-013 — Eliminar materia
+
+**Como estudiante, quiero eliminar una materia para corregir errores en mi plan de estudios.**
+
+---
+
+## US-014 — Actualizar estado académico
+
+**Como estudiante, quiero cambiar el estado de una materia para reflejar mi situación académica actual.**
+
+Estados iniciales:
+
+* Pendiente.
+* Cursando.
+* Regularizada.
+* Aprobada.
+
+---
+
+# Módulo: Seguimiento académico
+
+## US-015 — Visualizar progreso de una carrera
+
+**Como estudiante, quiero visualizar el progreso de una carrera para conocer cuánto he avanzado en ella.**
+
+---
+
+## US-016 — Consultar materias pendientes
+
+**Como estudiante, quiero consultar las materias que aún debo completar para planificar mi recorrido académico.**
+
+---
+
+## US-017 — Comparar mi avance entre carreras
+
+**Como estudiante con múltiples carreras, quiero consultar el avance de cada carrera para tener una visión general de mis trayectorias académicas.**
+
+---
+
+# Módulo: Almacenamiento y acceso
+
+## US-018 — Mantener información guardada
+
+**Como estudiante, quiero que mi información permanezca guardada al cerrar la aplicación para continuar utilizando la app sin perder datos.**
+
+---
+
+## US-019 — Utilizar la aplicación sin conexión
+
+**Como estudiante, quiero utilizar la aplicación sin conexión a Internet para consultar mi información académica en cualquier momento.**
 
 ---
 
@@ -106,11 +147,9 @@ Las siguientes historias de usuario describen las funcionalidades que deberá of
 
 Durante esta primera versión:
 
-* Toda la información será ingresada manualmente por el usuario.
-* La aplicación no dependerá de un servidor ni de una base de datos externa.
-* Los datos se almacenarán localmente en el dispositivo.
-* No existirá sincronización entre dispositivos.
-* No se incluirán sugerencias automáticas de carreras, universidades o planes de estudio.
-
-Estas funcionalidades podrán incorporarse en futuras versiones sin modificar la filosofía principal del producto.
-
+* Toda la información será cargada manualmente por el estudiante.
+* Cada estudiante podrá gestionar una o más carreras.
+* Cada carrera tendrá su propio plan de estudios y materias.
+* La información se almacenará localmente en el dispositivo.
+* No habrá dependencia de bases de datos externas.
+* Las sugerencias automáticas, importación de planes de estudio y sincronización serán consideradas para futuras versiones.
