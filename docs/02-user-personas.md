@@ -75,33 +75,37 @@ Si la respuesta es sí, probablemente tenga sentido incorporarla al producto.
 
 ---
 
-# Persona 3 — Estudiante próximo a graduarse
+## Persona 3 — Estudiante que cursa dos carreras
 
-## Perfil
+### Perfil
 
 **Nombre:** Sofía
 
 **Edad:** 24 años
 
-**Situación:** Está finalizando su carrera universitaria.
+**Situación:** Está cursando dos carreras universitarias al mismo tiempo y necesita organizar la información académica de ambas.
 
-## Objetivos
+### Objetivos
 
-* Saber exactamente qué materias le faltan.
-* Llevar un seguimiento claro de su progreso.
-* Organizar la etapa final de la carrera.
+- Organizar la información de sus dos carreras en un único lugar.
+- Llevar un seguimiento claro del progreso de cada carrera.
+- Conocer qué materias debe cursar, cuáles aprobó y cuáles tiene pendientes.
+- Administrar su tiempo entre ambas trayectorias académicas.
 
-## Frustraciones
+### Frustraciones
 
-* Debe revisar varias veces el plan de estudios.
-* No tiene una visión clara de su avance.
-* Le cuesta recordar información de materias cursadas hace años.
+- Debe consultar diferentes planes de estudio.
+- Utiliza distintas herramientas para organizar cada carrera.
+- Puede confundirse entre materias, avances y pendientes de cada carrera.
+- No tiene una visión centralizada de su progreso académico.
 
-## Necesidades
+### Necesidades
 
-* Visualizar el porcentaje de avance de la carrera.
-* Consultar rápidamente el estado de cada materia.
-* Tener toda la trayectoria académica organizada.
+- Gestionar múltiples carreras desde una misma aplicación.
+- Visualizar el avance de cada carrera de forma independiente.
+- Mantener separado el plan de estudios y el estado de las materias de cada carrera.
+- Cambiar fácilmente entre una carrera y otra.
+- Tener toda su trayectoria académica organizada desde un único lugar.
 
 ---
 
