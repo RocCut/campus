@@ -4,11 +4,11 @@
 
 Los casos de uso describen cómo interactúa el estudiante con la aplicación para alcanzar un objetivo específico.
 
-Cada caso de uso representa una tarea importante dentro del Producto Mínimo Viable (MVP) y servirá como guía para el diseño de la interfaz y el desarrollo de las funcionalidades.
+Cada caso de uso representa una funcionalidad principal del Producto Mínimo Viable (MVP) y servirá como guía para el diseño de la interfaz y el desarrollo de la aplicación.
 
 ---
 
-# CU-001 Crear perfil
+# CU-001 — Crear perfil
 
 **Actor principal**
 
@@ -23,15 +23,13 @@ Crear el perfil inicial de la aplicación.
 1. El estudiante abre la aplicación por primera vez.
 2. El sistema muestra la pantalla de bienvenida.
 3. El estudiante ingresa su nombre.
-4. El estudiante ingresa el nombre de la institución.
-5. El estudiante ingresa el nombre de la carrera.
-6. El estudiante guarda la información.
-7. El sistema almacena los datos localmente.
-8. El sistema muestra la pantalla principal.
+4. Guarda la información.
+5. El sistema crea el perfil.
+6. El sistema invita al estudiante a registrar su primera carrera.
 
 ---
 
-# CU-002 Crear plan de estudios
+# CU-002 — Registrar una carrera
 
 **Actor principal**
 
@@ -39,23 +37,103 @@ Estudiante.
 
 **Objetivo**
 
-Crear manualmente el plan de estudios.
+Registrar una nueva carrera.
 
 **Flujo principal**
 
-1. El estudiante accede al apartado "Plan de estudios".
-2. Selecciona "Agregar materia".
-3. Ingresa el nombre de la materia.
-4. Indica el año correspondiente.
-5. Indica el cuatrimestre.
-6. Guarda la materia.
-7. El sistema incorpora la materia al plan.
-
-Este proceso puede repetirse hasta completar el plan de estudios.
+1. El estudiante selecciona "Añadir carrera".
+2. Ingresa el nombre de la institución.
+3. Ingresa el nombre de la carrera.
+4. Guarda la información.
+5. El sistema crea la carrera.
+6. El sistema muestra el panel de la carrera.
 
 ---
 
-# CU-003 Editar una materia
+# CU-003 — Cambiar entre carreras
+
+**Actor principal**
+
+Estudiante.
+
+**Objetivo**
+
+Consultar o administrar una carrera específica.
+
+**Flujo principal**
+
+1. El estudiante accede al listado de carreras.
+2. Selecciona una carrera.
+3. El sistema carga el plan de estudios correspondiente.
+4. El estudiante comienza a gestionar esa carrera.
+
+---
+
+# CU-004 — Editar una carrera
+
+**Actor principal**
+
+Estudiante.
+
+**Objetivo**
+
+Modificar la información de una carrera.
+
+**Flujo principal**
+
+1. El estudiante abre la configuración de una carrera.
+2. Modifica el nombre de la institución o de la carrera.
+3. Guarda los cambios.
+4. El sistema actualiza la información.
+
+---
+
+# CU-005 — Eliminar una carrera
+
+**Actor principal**
+
+Estudiante.
+
+**Objetivo**
+
+Eliminar una carrera del perfil.
+
+**Flujo principal**
+
+1. El estudiante selecciona una carrera.
+2. Elige la opción "Eliminar".
+3. El sistema solicita confirmación.
+4. El estudiante confirma la acción.
+5. El sistema elimina la carrera y toda la información asociada.
+
+---
+
+# CU-006 — Crear el plan de estudios
+
+**Actor principal**
+
+Estudiante.
+
+**Objetivo**
+
+Crear manualmente el plan de estudios de una carrera.
+
+**Flujo principal**
+
+1. El estudiante abre una carrera.
+2. Accede al apartado "Plan de estudios".
+3. Selecciona "Agregar materia".
+4. Ingresa el nombre de la materia.
+5. Indica el año.
+6. Indica el cuatrimestre.
+7. Guarda la materia.
+8. El sistema la incorpora al plan de estudios.
+
+Este proceso puede repetirse hasta completar el plan.
+
+---
+
+# CU-007 — Editar una materia
 
 **Actor principal**
 
@@ -71,11 +149,11 @@ Modificar la información de una materia.
 2. El sistema muestra su información.
 3. El estudiante modifica los datos necesarios.
 4. Guarda los cambios.
-5. El sistema actualiza la información.
+5. El sistema actualiza la materia.
 
 ---
 
-# CU-004 Cambiar el estado de una materia
+# CU-008 — Cambiar el estado académico
 
 **Actor principal**
 
@@ -83,19 +161,19 @@ Estudiante.
 
 **Objetivo**
 
-Actualizar la situación académica de una materia.
+Actualizar el estado académico de una materia.
 
 **Flujo principal**
 
 1. El estudiante abre una materia.
-2. Selecciona el estado correspondiente.
+2. Selecciona un nuevo estado.
 3. Guarda los cambios.
 4. El sistema actualiza la materia.
-5. El progreso académico se recalcula automáticamente.
+5. El sistema recalcula automáticamente el progreso de la carrera.
 
 ---
 
-# CU-005 Consultar el plan de estudios
+# CU-009 — Consultar el plan de estudios
 
 **Actor principal**
 
@@ -103,17 +181,17 @@ Estudiante.
 
 **Objetivo**
 
-Visualizar la estructura completa de la carrera.
+Visualizar la estructura académica de una carrera.
 
 **Flujo principal**
 
-1. El estudiante abre el plan de estudios.
-2. El sistema muestra las materias organizadas por año y cuatrimestre.
-3. El estudiante consulta la información.
+1. El estudiante selecciona una carrera.
+2. Accede al plan de estudios.
+3. El sistema muestra las materias organizadas por año y cuatrimestre.
 
 ---
 
-# CU-006 Consultar el progreso académico
+# CU-010 — Consultar el progreso académico
 
 **Actor principal**
 
@@ -121,13 +199,14 @@ Estudiante.
 
 **Objetivo**
 
-Conocer el avance en la carrera.
+Conocer el avance de una carrera.
 
 **Flujo principal**
 
-1. El estudiante accede a la sección de progreso.
-2. El sistema calcula el avance.
-3. El sistema muestra:
+1. El estudiante selecciona una carrera.
+2. Accede a la sección de progreso.
+3. El sistema calcula automáticamente el avance.
+4. El sistema muestra:
 
    * porcentaje de avance;
    * materias aprobadas;
@@ -137,7 +216,7 @@ Conocer el avance en la carrera.
 
 ---
 
-# CU-007 Editar el perfil
+# CU-011 — Editar el perfil
 
 **Actor principal**
 
@@ -145,7 +224,7 @@ Estudiante.
 
 **Objetivo**
 
-Actualizar los datos del perfil.
+Actualizar la información del perfil.
 
 **Flujo principal**
 
@@ -156,7 +235,7 @@ Actualizar los datos del perfil.
 
 ---
 
-# CU-008 Continuar utilizando la aplicación
+# CU-012 — Recuperar la información almacenada
 
 **Actor principal**
 
@@ -164,19 +243,20 @@ Estudiante.
 
 **Objetivo**
 
-Recuperar la información previamente almacenada.
+Continuar utilizando la aplicación sin perder la información registrada.
 
 **Flujo principal**
 
 1. El estudiante abre la aplicación.
-2. El sistema carga automáticamente los datos almacenados.
-3. Se muestra la pantalla principal con toda la información disponible.
+2. El sistema carga automáticamente la información almacenada localmente.
+3. El sistema muestra el listado de carreras.
+4. El estudiante selecciona la carrera que desea consultar.
 
 ---
 
-## Observaciones
+# Observaciones
 
-Los casos de uso del MVP se centran exclusivamente en la gestión manual de la trayectoria académica.
-
-No contemplan autenticación, sincronización en la nube ni integración con servicios externos. Estas funcionalidades podrán incorporarse en futuras versiones sin alterar el flujo principal de uso de la aplicación.
-
+* Un perfil puede gestionar una o más carreras.
+* Cada carrera mantiene su propio plan de estudios, materias y progreso académico.
+* Todas las funcionalidades del MVP estarán disponibles sin conexión a Internet.
+* Toda la información será ingresada manualmente por el estudiante y almacenada localmente en el dispositivo.
